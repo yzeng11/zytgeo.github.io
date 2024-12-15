@@ -11,7 +11,26 @@
             line-height: 1.6;
             margin: 20px;
             display: flex;
-            align-items: center; /* 垂直居中 */
+            flex-direction: column;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-right: 15px;
+            color: #007bff;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            display: flex;
+            align-items: flex-start;
         }
 
         .photo {
@@ -30,17 +49,28 @@
     </style>
 </head>
 <body>
-    <!-- 左侧：图片部分 -->
-    <div class="photo">
-        <img src="photo.jpg" alt="Yutian Zeng">
-    </div>
+    <!-- 导航栏部分 -->
+    <h1>Welcome to My Personal Website!</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="research.html">Research Interests</a> |
+        <a href="publications.html">Publications</a> |
+        <a href="awards.html">Awards</a>
+    </nav>
 
-    <!-- 右侧：正文部分 -->
-    <div class="content">
-        <h1>Welcome to My Personal Website!</h1>
-        <p>I am currently a Ph.D. candidate in the Department of Geography and Anthropology at Louisiana State University.</p>
-        <p>My research interests include GIS, remote sensing, and urban spatial analysis. I am passionate about using geospatial technology to solve real-world problems.</p>
-        <p>Feel free to explore my website to learn more about my research, publications, and achievements!</p>
+    <!-- 主体内容部分 -->
+    <div class="main-content">
+        <!-- 左侧：图片部分 -->
+        <div class="photo">
+            <img src="photo.jpg" alt="Yutian Zeng">
+        </div>
+
+        <!-- 右侧：正文部分 -->
+        <div class="content">
+            <p>I am currently a Ph.D. candidate in the Department of Geography and Anthropology at Louisiana State University.</p>
+            <p>My research interests include GIS, remote sensing, and urban spatial analysis. I am passionate about using geospatial technology to solve real-world problems.</p>
+            <p>Feel free to explore my website to learn more about my research, publications, and achievements!</p>
+        </div>
     </div>
 </body>
 </html>
